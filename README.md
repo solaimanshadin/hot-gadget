@@ -1,1 +1,1 @@
-"# Hot Gadget- Eccomerce"
+"# Hot Gadget- Ecommerce"
