@@ -93,6 +93,10 @@ span.color-bar {
     text-align: center;
     border-radius: 20px 0 20px 0px;
 }
+.single-cat a h4{
+    color: #2c2c2c;
+    margin-top: 10px;
+}
 .single-cat.reverse-radious{
     border-radius: 0 20px 0 20px;
 
