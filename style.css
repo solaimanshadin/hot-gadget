@@ -1,3 +1,7 @@
+* {
+    transition: .3s all ease-in-out;
+}
+
 body {
     font-family: 'Poppins', ;
 }
@@ -6,17 +10,22 @@ h1 {
     font-size: 41px;
 }
 
-h2 {
-    font-size: 35px;
-    font-weight: 500;
-}
-
+h2,
 h3 {
-    font-size: 30px;
     font-weight: 500;
 }
 
-.navbar-brand img {
+h2 {
+    font-size: 34px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFD019;
+}
+
+.navbar-brand img,
+footer img {
     height: 65px;
 }
 
@@ -24,7 +33,7 @@ h3 {
     color: #707070;
 }
 
-.banner-area {
+.banner-section {
     background-image: url(images/dooted-qube.png);
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -54,7 +63,7 @@ h3 {
 
 .card {
     border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px rgba(109, 109, 109, 0.12);
     border-radius: 10px;
 }
 
@@ -83,9 +92,35 @@ span.color-bar {
 .single-cat {
     text-align: center;
     border-radius: 20px 0 20px 0px;
-    transition: .3s all ease-in-out;
 }
 
 .single-cat:hover {
     transform: translateY(-10px);
+}
+
+footer li a {
+    color: dimgray;
+}
+
+.contact-info img,
+.social-media img {
+    width: 16px;
+    height: 16px;
+}
+
+.contact-info img {
+    margin-right: 10px;
+}
+
+.social-media li a {
+    display: block;
+    text-align: center;
+    width: 28px;
+    height: 28px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.social-media li a:hover {
+    background-image: linear-gradient(to left, #FF9C35, #FFD019);
 }
