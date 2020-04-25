@@ -1,134 +1,116 @@
-* {
-    transition: .3s all ease-in-out;
+*{
+    transition: .3s all;
 }
-
-body {
-    font-family: 'Poppins', ;
+html{
+    scroll-behavior: smooth;
 }
-
-h1 {
-    font-size: 41px;
-}
-
-h2,
-h3 {
-    font-weight: 500;
-}
-
-h2 {
-    font-size: 34px;
-}
-
-a:hover {
+a:hover{
     text-decoration: none;
     color: #FFD019;
 }
-
-.navbar-brand img,
-footer img {
+p{
+    color: #707070;
+    line-height: 2em;
+}
+/* ==== Navigation ==== */
+.navbar-brand img{
     height: 65px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: #707070;
-}
-
-.banner-section {
+/* ==== Banner ==== */
+.banner{
     background-image: url(images/dooted-qube.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 8%;
 }
-
-.carousel-item {
+.banner .carousel-item{
     background-image: url(images/product-text.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 5%;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
-.carousel-indicators li {
+.carousel-indicators li{
     background-color: #CECECE;
-    height: 10px;
-    width: 16px;
-    border-radius: 6px;
-    border: none;
-}
-
-.carousel-indicators .active {
-    background-image: linear-gradient(to right, #FF9C35, #FFD019);
-    width: 45px;
-}
-
-.card {
-    border: none;
-    box-shadow: 0 5px 20px rgba(109, 109, 109, 0.12);
-    border-radius: 10px;
-}
-
-.card img {
-    padding-top: 30px;
-    width: 75%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-span.color-bar {
-    display: block;
-    margin: 0 auto;
-    width: 120px;
-    height: 5px;
+    border: 0;
+    height: 8px;
+    width: 12px;
     border-radius: 5px;
-    background-image: linear-gradient(to left, #FF9C35, #FFD019);
+}
+.carousel-indicators li.active{
+    width: 40px;
+    background-image: linear-gradient(to right , #FF9C35 , #FFD019);
 }
 
-.product-cat-title a {
+/* ==== Products ==== */
+#products .type-title a{
     color: #FF9D00;
-    font-weight: 700;
+    font-weight: bold;
+}
+#products .card{
+    border: 0;
+    box-shadow: 10px 0 30px #00000010;
+    border-radius: 10px ;
+}
+#products .card-img-top {
+    padding-top: 30px;
+    width: 70%;
+    height:auto;
+    display: block;
+    margin: 0 auto;
+}
+/* ==== categories ==== */
+.categories .section-title::after{
+    content: "";
+    width: 120px;
+    border-radius: 8px;
+    height: 6px;
+    display: block;
+    background-image: linear-gradient(25deg , #FFD019 , #FF9C35);
+    margin: 10px auto;
+
+}
+.categories a{
+    color: #050505;
 }
 
-.single-cat {
-    text-align: center;
-    border-radius: 20px 0 20px 0px;
+
+.categories .cat{
+    padding: 50px;
+    margin-bottom: 20px;
+    box-shadow: 6px 0 40px rgba(109, 109, 109, .15);
+    border-radius: 30px 0 30px 0;
 }
-.single-cat a h4{
-    color: #2c2c2c;
-    margin-top: 10px;
-}
-.single-cat.reverse-radious{
-    border-radius: 0 20px 0 20px;
+.categories .cat.reverse-radius{
+    border-radius:  0 30px 0 30px;
 
 }
-
-.single-cat:hover {
+.categories .cat:hover{
     transform: translateY(-10px);
 }
-
-footer li a {
+/* ==== footer ==== */
+footer a{
     color: dimgray;
 }
-
-.contact-info img,
-.social-media img {
-    width: 16px;
-    height: 16px;
-}
-
-.contact-info img {
-    margin-right: 10px;
-}
-
-.social-media li a {
+footer .social-medias li a{
     display: block;
-    text-align: center;
     width: 28px;
     height: 28px;
-    background-color: #000000;
     border-radius: 50%;
+    background: #000;
+    text-align: center;
+}
+footer .contact-info img{
+    margin-right: 10px;
+}
+img.footer-logo{
+    height: 65px;
 }
 
-.social-media li a:hover {
-    background-image: linear-gradient(to left, #FF9C35, #FFD019);
+@media (max-width:777px){
+    .banner .carousel-item{
+        background: none;
+    }
 }
