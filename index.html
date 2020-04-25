@@ -1,241 +1,255 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>Hot Gadget - The best e-commerce website in the planet </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hot Gadget - Best e-commerce website in the World</title>
-    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  </head>
+  <body>
+    <!-- ===== Navigation Menu Start ===== -->
+    <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Hotgadet Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Product</a>
+                        <a class="nav-link" href="#products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#">Contact us</a>
                     </li>
                 </ul>
             </div>
         </div>
-
     </nav>
+    <!-- ===== Navigation Menu End ===== -->
 
-    <section class="banner-section  mb-5">
-        <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 order-1 order-md-0 pr-md-5">
-                                <h1>Mackbook Pro</h1>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
-                                </p>
-                                <button class="btn btn-dark">Buy Now &#8594;</button>
-                            </div>
-                            <div class="col-md-6  order-0 order-md-1 pl-md-5">
-                                <img src="images/banner-products/product-1.png" class="d-block w-100" alt="...">
-                            </div>
+    <!-- ===== Carousel  Start ===== -->
+    <section class="banner">
+        <div id="carouselId" class="carousel slide container" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselId" data-slide-to="1"></li>
+                <li data-target="#carouselId" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 order-2 order-sm-1">
+                            <h1>Mi Pro Speaker</h1>
+                            <p class="my-4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.</p>
+                            <button class="btn btn-dark">Buy Now →</button>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 order-1 order-md-0 pr-md-5">
-                                <h1>Mi Pro Speaker</h1>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
-                                </p>
-                                <button class="btn btn-dark">Buy Now &#8594;</button>
-                            </div>
-                            <div class="col-md-6  order-0 order-md-1 pl-md-5">
-                                <img src="images/banner-products/slider-1.png" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 order-1 order-md-0 pr-md-5">
-                                <h1>JBL Boombox</h1>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
-                                </p>
-                                <button class="btn btn-dark">Buy Now &#8594;</button>
-                            </div>
-                            <div class="col-md-6 order-0 order-md-1 pl-md-5">
-                                <img src="images/banner-products/slider-3.png" class="d-block w-100" alt="...">
-                            </div>
+                        <div class="col-md-6 order-1 order-sm-2">
+                            <img class="img-fluid" src="images/banner-products/slider-1.png" alt="">
                         </div>
                     </div>
                 </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="product-section">
-        <div class="container mb-5">
-            <div class="product-cat-title d-flex justify-content-between mb-3">
-                <h3>Smartphone</h3>
-                <a href="">See All</a>
-            </div>
-            <div class="smartphones text-center">
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="images/phone/phone-1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">iPhone 11 Pro</h5>
-                            <p class="card-text">Some quick example text to build on the card title.</p>
-                            <h5>$999</h5>
-                            <button class="btn btn-dark">Buy Now &#8594;</button>
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 order-2 order-sm-1">
+                            <h1>Mackbook Pro</h1>
+                            <p class="my-4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.</p>
+                            <button class="btn btn-dark">Buy Now →</button>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/phone/phone-2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Samsung Galaxy Note10+</h5>
-                            <p class="card-text">Some quick example text to build on the card title.</p>
-                            <h5>$799</h5>
-                            <button class="btn btn-dark">Buy Now &#8594;</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/phone/phone-3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Samsung Galaxy Note9</h5>
-                            <p class="card-text">Some quick example text to build on the card title.</p>
-                            <h5>$699</h5>
-                            <button class="btn btn-dark">Buy Now &#8594;</button>
+                        <div class="col-md-6 order-1 order-sm-2">
+                            <img class="img-fluid" src="images/banner-products/product-1.png" alt="">
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container mb-5">
-            <div class="product-cat-title d-flex justify-content-between mb-3">
-                <h3>Laptop</h3>
-                <a href="">See All</a>
-            </div>
-            <div class="laptops text-center">
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="images/laptop/product-1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Asus VivoBook </h5>
-                            <p class="card-text">Some quick example text to build on the card title.</p>
-                            <h5>$999</h5>
-                            <button class="btn btn-dark">Buy Now &#8594;</button>
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-6  order-2 order-sm-1">
+                            <h1>JBL Boombox</h1>
+                            <p class="my-4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.</p>
+                            <button class="btn btn-dark">Buy Now →</button>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/laptop/product-2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Razer Blade 15 </h5>
-                            <p class="card-text">Some quick example text to build on the card title.</p>
-                            <h5>$799</h5>
-                            <button class="btn btn-dark">Buy Now &#8594;</button>
-                        </div>
-
-                    </div>
-                    <div class="card">
-                        <img src="images/laptop/product-3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Xiaomi Mi Notebook Pro</h5>
-                            <p class="card-text">Some quick example text to build on the card title.</p>
-                            <h5>$699</h5>
-                            <button class="btn btn-dark">Buy Now &#8594;</button>
+                        <div class="col-md-6 order-1 order-sm-2">
+                            <img class="img-fluid" src="images/banner-products/slider-3.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- ===== Carousel End ===== -->
 
-    <section class="category-section mb-5">
+    <!-- ===== Products Section Start ===== -->
+    <section id="products">
+        <div class="container my-5">
+            <div class="smartphones">
+                <div class="type-title d-flex align-items-center justify-content-between">
+                    <h4>Smartphone</h4>
+                    <a href="#">See All</a>
+                </div>
+                <div class="card-deck my-4">
+                        <div class="card text-center">
+                            <img src="images/phone/phone-1.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">iPhone 11 Pro</h5>
+                                <p>Some quick example text to build on
+                                    the card title.</p>
+                                <h2 class="my-4">$999</h2>
+                                <button class="btn btn-dark">Buy Now  →</button>
+                            </div>
+                        </div>
+                    
+                        <div class="card text-center">
+                            <img src="images/phone/phone-2.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Samsung Galaxy Note10+</h5>
+                                <p>Some quick example text to build on
+                                    the card title.</p>
+                                <h2 class="my-4">$799</h2>
+                                <button class="btn btn-dark">Buy Now  →</button>
+                            </div>
+                        </div>
+                
+                        <div class="card text-center">
+                            <img src="images/phone/phone-3.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Samsung Galaxy Note9 </h5>
+                                <p>Some quick example text to build on
+                                    the card title.</p>
+                                <h2 class="my-4">$699</h2>
+                                <button class="btn btn-dark">Buy Now  →</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="laptops my-5 pt-3">
+                <div class="type-title d-flex align-items-center justify-content-between">
+                    <h4>Laptop</h4>
+                    <a href="#">See All</a>
+                </div>
+                <div class="card-deck my-4">
+                        <div class="card text-center">
+                            <img src="images/laptop/product-1.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Asus VivoBook </h5>
+                                <p>Some quick example text to build on
+                                    the card title.</p>
+                                <h2 class="my-4">$999</h2>
+                                <button class="btn btn-dark">Buy Now  →</button>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <img src="images/laptop/product-2.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Razer Blade 15</h5>
+                                <p>Some quick example text to build on
+                                    the card title.</p>
+                                <h2 class="my-4">$2799</h2>
+                                <button class="btn btn-dark">Buy Now  →</button>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <img src="images/laptop/product-3.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Xiaomi Mi Notebook Pro </h5>
+                                <p>Some quick example text to build on
+                                    the card title.</p>
+                                <h2 class="my-4">$699</h2>
+                                <button class="btn btn-dark">Buy Now  →</button>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Products Section End ===== -->
+
+    <!-- ===== Category Section Start ===== -->
+    <section class="categories">
         <div class="container">
-            <h2 class="text-center">Categories</h2>
-            <span class="color-bar mb-5"></span>
-
+            <h2 class="section-title text-center my-5">Categories</h2>
             <div class="row align-items-center">
-                <div class="col-md-3 order-3 order-md-0">
-                    <div class="single-cat reverse-radious shadow-lg p-5 mb-4">
-                        <a href="#">
-                            <img class="img-fluid" src="images/Categories/bag.png" alt="">
-                            <h4>Bag</h4>
-                        </a>
+                <div class="col-md-6">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center">
+                            <a href="#products">
+                                <div class="cat reverse-radius">
+                                    <img class="img-fluid" src="images/Categories/bag.png" alt="">
+                                    <h4 class="mt-3">Bag</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <a href="#products">
+                                <div class="cat">
+                                    <img class="img-fluid" src="images/Categories/perfume.png" alt="">
+                                    <h4 class="mt-3">Beauty</h4>
+                                </div>
+                            </a>
+                            <a href="#products">
+                                <div class="cat">
+                                    <img class="img-fluid" src="images/Categories/shoe.png" alt="">
+                                    <h4 class="mt-3">Shoes</h4>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 order-2 order-md-1">
-                    <div class="single-cat shadow-lg p-5 mb-4  mb-md-5">
-                        <a href="#">
-                            <img class="img-fluid" src="images/Categories/perfume.png" alt="">
-                            <h4>Beauty</h4>
-                        </a>
-                    </div>
-                    <div class="single-cat shadow-lg p-5 mb-4">
-                        <a href="#">
-                            <img class="img-fluid" src="images/Categories/shoe.png" alt="">
-                            <h4>Shoes</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 order-0 order-md-2">
+
+                <div class="col-md-6">
                     <img class="img-fluid" src="images/Categories/pale-order.png" alt="">
                 </div>
             </div>
         </div>
     </section>
+    <!-- ===== Category Section End ===== -->
 
-    <section class="newsletter p-3">
-        <div class="container  shadow bg-warning text-white  p-4 p-md-5 rounded ">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md-6">
-                    <h2>NEWS LETTER</h2>
-                    <p>Join us now to get all news and special offers
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <form class="form" action="">
-                        <div class="input-group">
-                            <input class="form-control" placeholder="Enter Your Email Here" type="text">
-                            <div class="input-group-append">
-                                <button class="btn btn-danger">Join Us</button>
+    <!-- ==== Newsletter Section Start ===== -->
+    <section class="newsletter my-5">
+        <div class="container pb-3">
+            <div class="bg-warning  rounded shadow">
+                <div class="row py-5 px-4 px-md-5 align-items-center">
+                    <div class="col-md-6">
+                        <h1 class="text-white">NEWS LETTER</h1>
+                        <p class="text-white">Join us now to get all news and special offers</p>
+                    </div>
+                    <div class="col-md-6">
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" placeholder="Enter your email here" class="form-control">
+                                <div class="input-group-append">
+                                    <button class="btn btn-danger">Join us</button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- ==== Newsletter Section end ===== -->
 
-
-    <footer class="bg-light mt-5">
-        <div class="container py-5">
+    <!-- ==== Footer start ==== -->
+    <footer class="bg-light py-5">
+        <div class="container">
             <div class="row">
                 <div class="col-md-4 order-4 order-md-0">
-                    <img class="d-none d-md-block" src="images/logo.png" alt="">
-                    <p class="mt-3 text-center text-md-left">HotGadget © 2020 . All right Reserved</p>
+                    <img class="d-none d-md-block footer-logo" src="images/logo.png" alt="">
+                    <p class="text-center text-md-left mt-3">HotGadget &copy; 2020 . All right Reserved</p>
                 </div>
                 <div class="col-6 col-md-2">
                     <ul class="list-unstyled">
@@ -247,7 +261,7 @@
                 <div class="col-6 col-md-3">
                     <ul class="list-unstyled">
                         <li><a href="#">Our Feed</a></li>
-                        <li><a href="#">Term And Condition</a></li>
+                        <li><a href="#">Terms and Condition</a></li>
                         <li><a href="#">Our Policy</a></li>
                     </ul>
                 </div>
@@ -257,28 +271,22 @@
                         <li><img src="images/icons/email.png" alt=""><a href="mailto:info@hotgadget.com"> info@hotgadget.com</a></li>
                         <li><img src="images/icons/call.png" alt=""><a href="tel:88017-XXX-XXX">+88017-XXX-XXX</a></li>
                     </ul>
-                    <ul class="list-inline social-media">
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://facebook.com/dev.shadin"><img src="images/icons/facebook.png" alt=""></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://twitter.com/hotgadget"><img src="images/icons/twitter.png" alt=""></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://instagram.com/hotgadget"><img src="images/icons/instagram.png" alt=""></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://pinterest.com/hotgadget"><img src="images/icons/pinterest.png" alt=""></a>
-                        </li>
+                    <ul class="list-inline social-medias my-4">
+                        <li class="list-inline-item"><a href="https://facebook.com/dev.shadin"><img src="images/icons/facebook.png" alt=""></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="images/icons/twitter.png" alt=""></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="images/icons/instagram.png" alt=""></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="images/icons/pinterest.png" alt=""></a></li>
                     </ul>
                 </div>
             </div>
         </div>
-
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+    <!-- ==== Footer end ==== -->
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
